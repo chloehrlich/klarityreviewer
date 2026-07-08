@@ -1,7 +1,12 @@
-// Runs the spec's acceptance tests locally against the real serverless core.
-// Requires ANTHROPIC_API_KEY in the environment.
+// Runs the spec's acceptance tests. Two modes:
 //
-//   node scripts/acceptance.mjs
+//   Local core (needs ANTHROPIC_API_KEY in the environment):
+//     node scripts/acceptance.mjs
+//
+//   Against a deployed endpoint (uses the key configured on that host, e.g.
+//   Vercel — nothing sensitive needed locally):
+//     REVIEW_API_URL=https://your-app.vercel.app/api/generate \
+//       node scripts/acceptance.mjs
 //
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -22,11 +27,29 @@ function line(s = "") {
   console.log(s);
 }
 
+const LIVE_URL = process.env.REVIEW_API_URL; // e.g. https://app.vercel.app/api/generate
+
 async function run(name) {
   const signals = data[name];
   const role = detectRole(signals);
   const thin = isThinSignal(signals);
-  const result = await generateReview({ name, role, signals, thin });
+
+  let result;
+  if (LIVE_URL) {
+    // Hit the deployed serverless function, which holds the key on the host.
+    const res = await fetch(LIVE_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, role, signals, thin }),
+    });
+    result = await res.json();
+    if (!res.ok) {
+      throw new Error(result.error || `Live endpoint returned ${res.status}`);
+    }
+  } else {
+    result = await generateReview({ name, role, signals, thin });
+  }
+
   return { role, thin, result };
 }
 
