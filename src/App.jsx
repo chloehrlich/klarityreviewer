@@ -174,6 +174,7 @@ export default function App() {
           result={result}
           error={error}
           personName={selected}
+          signals={signals}
         />
       </div>
     </div>

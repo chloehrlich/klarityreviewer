@@ -285,24 +285,143 @@ select:focus {
   color: var(--charcoal);
   margin: 22px 0 10px;
 }
+.section-title .count {
+  color: var(--muted);
+  font-weight: 600;
+}
 .summary {
   font-size: 15px;
+  line-height: 1.55;
   color: var(--charcoal);
+  padding: 12px 14px;
+  background: #fff;
+  border-left: 3px solid var(--orange);
+  border-radius: 8px;
 }
+
+/* Curated points — the skimmable surface */
 .point {
-  margin-bottom: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.point.growth {
+  background: #fffaf5;
+  border-color: var(--orange-border);
 }
 .point-text {
   font-size: 15px;
+  line-height: 1.5;
 }
+
+/* Fallback evidence line (citation didn't match a signal row) */
 .evidence {
   font-size: 13px;
   color: var(--muted);
-  margin-top: 3px;
+  margin-top: 6px;
 }
 .evidence strong {
   color: var(--orange);
   font-weight: 600;
+}
+
+/* Expandable citation + unreferenced disclosure */
+details.citation {
+  margin-top: 8px;
+}
+details.citation > summary,
+details.unreferenced > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  user-select: none;
+}
+details.citation > summary::-webkit-details-marker,
+details.unreferenced > summary::-webkit-details-marker {
+  display: none;
+}
+.cite-caret {
+  display: inline-block;
+  color: var(--orange);
+  font-size: 11px;
+  transition: transform 0.15s ease;
+}
+details[open] > summary .cite-caret {
+  transform: rotate(90deg);
+}
+.cite-label strong {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+summary:hover .cite-label,
+summary:hover .cite-label strong {
+  color: var(--orange);
+}
+details[open] .cite-label strong {
+  color: var(--orange);
+}
+
+/* Full underlying signal row */
+.signal-detail {
+  margin-top: 8px;
+  padding: 10px 12px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.signal-detail-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.signal-detail-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.signal-meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+.signal-desc {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0;
+  color: var(--charcoal);
+}
+.signal-tools {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* "Signals not referenced" section */
+details.unreferenced {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+details.unreferenced > summary {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+details.unreferenced > summary:hover {
+  color: var(--orange);
+}
+.unref-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 ul.goals,
 ul.questions {
