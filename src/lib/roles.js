@@ -15,16 +15,33 @@ export const STRENGTH_TYPES = ["Personal Strength", "Personal Proficiency"];
 export const ROLE_PROCESS = "Process Performer";
 export const ROLE_CHAMPION = "Champion";
 
+// A signal reads as "enablement-flavored" when it isn't just personal process
+// work but is aimed at bringing peers along — captured either by an
+// enablement/adoption Category or by adoption/peer language in the description.
+// This is the distinction the spec draws between a Champion and a strong
+// performer who happens to have some scaling/knowledge signals (e.g. Rob).
+const ENABLEMENT_CATEGORY = /enablement|adoption/i;
+const ENABLEMENT_DESC =
+  /\b(peer|peers|junior|juniors|onboard|onboarding|mentor|coach|taught|teaching|reused|reuse|rollout|share-?out|go-to|adoption|onto)\b/i;
+
+function isEnablementFlavored(signal) {
+  return (
+    CHAMPION_TYPES.includes(signal.Type) &&
+    (ENABLEMENT_CATEGORY.test(signal.Category || "") ||
+      ENABLEMENT_DESC.test(signal.Description || ""))
+  );
+}
+
 /**
- * Champion if >= 40% of signals are enablement-flavored types, else Process
- * Performer. Simple heuristic per the spec; a manual override exists in the UI.
+ * Champion if >= 40% of signals are one of the enablement-flavored champion
+ * types AND actually enablement-flavored (peer-driven, not just personal
+ * process improvement) — else Process Performer. Simple heuristic per the spec;
+ * a manual override exists in the UI for the borderline cases.
  */
 export function detectRole(signals) {
   if (!signals || signals.length === 0) return ROLE_PROCESS;
-  const championCount = signals.filter((s) =>
-    CHAMPION_TYPES.includes(s.Type)
-  ).length;
-  const ratio = championCount / signals.length;
+  const enablementCount = signals.filter(isEnablementFlavored).length;
+  const ratio = enablementCount / signals.length;
   return ratio >= 0.4 ? ROLE_CHAMPION : ROLE_PROCESS;
 }
 
