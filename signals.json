@@ -1,0 +1,574 @@
+{
+  "Alex Turner": [
+    {
+      "Title": "Missed daily capture sessions",
+      "Type": "Process Friction",
+      "Description": "Missed several daily capture sessions; adoption slow to start.",
+      "Session Date": "2026-04-11",
+      "Time": "10:02:33",
+      "Duration": "10:02:33 - 10:07:49",
+      "Tools": "Klarity Companion",
+      "Category": "Adoption"
+    },
+    {
+      "Title": "Partial reconciliation capture",
+      "Type": "Personal Proficiency",
+      "Description": "Captured a portion of assigned reconciliations; usage below team median.",
+      "Session Date": "2026-05-18",
+      "Time": "09:15:00",
+      "Duration": "09:15:00 - 09:26:11",
+      "Tools": "BlackLine; Klarity Companion",
+      "Category": ""
+    },
+    {
+      "Title": "Began ramping capture with support",
+      "Type": "Personal Strength",
+      "Description": "After a coaching nudge, started capturing more consistently late in the period.",
+      "Session Date": "2026-06-22",
+      "Time": "09:40:00",
+      "Duration": "09:40:00 - 09:51:03",
+      "Tools": "Klarity Companion; BlackLine",
+      "Category": "Adoption"
+    },
+    {
+      "Title": "Coverage still partial",
+      "Type": "Process Friction",
+      "Description": "Coverage remains around a third of assigned reconciliations; more support needed.",
+      "Session Date": "2026-07-02",
+      "Time": "10:05:00",
+      "Duration": "10:05:00 - 10:12:20",
+      "Tools": "BlackLine",
+      "Category": ""
+    }
+  ],
+  "Dana Osei": [
+    {
+      "Title": "Pace-setter on regional close capture",
+      "Type": "Personal Strength",
+      "Description": "Ran roughly 80% of East-region close processes through Companion, setting the pace for peers.",
+      "Session Date": "2026-02-18",
+      "Time": "08:05:00",
+      "Duration": "08:05:00 - 08:44:39",
+      "Tools": "BlackLine; SAP S/4HANA; Klarity Companion",
+      "Category": "Adoption"
+    },
+    {
+      "Title": "Onboarded two regional peers to Companion",
+      "Type": "Scaling Best Practice",
+      "Description": "Brought two regional peers onto Companion and became the informal go-to for questions.",
+      "Session Date": "2026-03-10",
+      "Time": "12:30:00",
+      "Duration": "12:30:00 - 12:52:18",
+      "Tools": "Klarity Companion; Teams",
+      "Category": "Enablement"
+    },
+    {
+      "Title": "Owned East-region Q1 close capture",
+      "Type": "Personal Strength",
+      "Description": "Carried East-region close capture cleanly through the Q1 hard close.",
+      "Session Date": "2026-03-31",
+      "Time": "09:00:00",
+      "Duration": "09:00:00 - 09:38:44",
+      "Tools": "BlackLine; SAP S/4HANA",
+      "Category": ""
+    },
+    {
+      "Title": "Converted a skeptical peer controller",
+      "Type": "Collaboration Communication",
+      "Description": "Brought a skeptical peer into active use by sharing concrete wins from her own captures.",
+      "Session Date": "2026-04-21",
+      "Time": "14:18:00",
+      "Duration": "14:18:00 - 14:33:57",
+      "Tools": "Klarity Companion; Slack",
+      "Category": "Adoption"
+    },
+    {
+      "Title": "Documented East-region close nuances",
+      "Type": "Knowledge Documentation",
+      "Description": "Captured regional sub-cert timing and local MJEs that were previously undocumented.",
+      "Session Date": "2026-05-16",
+      "Time": "10:41:00",
+      "Duration": "10:41:00 - 10:55:44",
+      "Tools": "SharePoint; Klarity Companion",
+      "Category": ""
+    },
+    {
+      "Title": "Shared wins that lifted team morale",
+      "Type": "Collaboration Communication",
+      "Description": "Regular Signals share-outs of regional wins kept the broader team engaged.",
+      "Session Date": "2026-06-13",
+      "Time": "11:00:00",
+      "Duration": "11:00:00 - 11:20:30",
+      "Tools": "Slack; Klarity Companion",
+      "Category": ""
+    },
+    {
+      "Title": "Sustained top-quartile adoption",
+      "Type": "Personal Strength",
+      "Description": "Maintained top-quartile Companion usage across the full period without prompting.",
+      "Session Date": "2026-07-01",
+      "Time": "08:30:00",
+      "Duration": "08:30:00 - 08:52:10",
+      "Tools": "Klarity Companion; BlackLine",
+      "Category": "Adoption"
+    }
+  ],
+  "Marcus Lin": [
+    {
+      "Title": "Close-transformation playbook verbalized in onboarding",
+      "Type": "Knowledge Documentation",
+      "Description": "Articulated the full close-transformation playbook onboarding the finance team; lives only in conversation.",
+      "Session Date": "2026-02-14",
+      "Time": "10:00:00",
+      "Duration": "10:00:00 - 10:28:44",
+      "Tools": "Klarity Companion; Google Meet; Notion",
+      "Category": "Enablement"
+    },
+    {
+      "Title": "Framed adoption as a sprint, not a campaign",
+      "Type": "Scaling Best Practice",
+      "Description": "Positioned adoption as a focused sprint rather than repeated encouragement, accelerating activation.",
+      "Session Date": "2026-02-28",
+      "Time": "09:30:00",
+      "Duration": "09:30:00 - 10:02:55",
+      "Tools": "Klarity Advisor; Google Meet",
+      "Category": "Enablement"
+    },
+    {
+      "Title": "Consultative office-hours facilitation",
+      "Type": "Personal Strength",
+      "Description": "Hosted office hours blending live navigation with the team's real close data to answer questions in context.",
+      "Session Date": "2026-03-13",
+      "Time": "15:00:00",
+      "Duration": "15:00:00 - 15:41:22",
+      "Tools": "Klarity Companion; Klarity Process Index; Google Meet",
+      "Category": ""
+    },
+    {
+      "Title": "Drove adoption with two resistant controllers",
+      "Type": "Collaboration Communication",
+      "Description": "Turned two initially resistant controllers into participants, moving adoption from flat to rising.",
+      "Session Date": "2026-03-27",
+      "Time": "11:12:40",
+      "Duration": "11:12:40 - 11:39:05",
+      "Tools": "Klarity Companion; Slack",
+      "Category": "Adoption"
+    },
+    {
+      "Title": "Flagged single-point-of-failure on interco template",
+      "Type": "Risk Mitigation",
+      "Description": "Raised that the interco template rollout depended on one person, a sustainability risk.",
+      "Session Date": "2026-04-10",
+      "Time": "13:44:00",
+      "Duration": "13:44:00 - 13:51:02",
+      "Tools": "Notion; Oracle HFM",
+      "Category": ""
+    },
+    {
+      "Title": "Exec update cadence to CFO articulated",
+      "Type": "Knowledge Documentation",
+      "Description": "Defined a weekly exec-update cadence to the CFO connecting sprint progress to close-cycle targets.",
+      "Session Date": "2026-04-24",
+      "Time": "16:05:00",
+      "Duration": "16:05:00 - 16:14:50",
+      "Tools": "Google Slides; Slack",
+      "Category": "Executive Communication"
+    },
+    {
+      "Title": "Activated 82% of the team on Companion",
+      "Type": "Personal Strength",
+      "Description": "Enablement sessions brought active usage to 18 of 22 team members.",
+      "Session Date": "2026-05-08",
+      "Time": "10:00:00",
+      "Duration": "10:00:00 - 10:33:20",
+      "Tools": "Klarity Companion; Google Meet",
+      "Category": "Adoption"
+    },
+    {
+      "Title": "Built the enablement kit others now reuse",
+      "Type": "Scaling Best Practice",
+      "Description": "Packaged his enablement materials into a kit other pod leads reuse for their teams.",
+      "Session Date": "2026-05-22",
+      "Time": "14:00:00",
+      "Duration": "14:00:00 - 14:29:12",
+      "Tools": "Notion; Google Slides",
+      "Category": "Enablement"
+    },
+    {
+      "Title": "Resolved recurring access escalations",
+      "Type": "Collaboration Communication",
+      "Description": "Cleared six access/capture escalations that were blocking performers from getting started.",
+      "Session Date": "2026-06-05",
+      "Time": "11:30:00",
+      "Duration": "11:30:00 - 11:52:41",
+      "Tools": "Slack; Klarity Companion",
+      "Category": ""
+    },
+    {
+      "Title": "Coached a pod lead through a stalled rollout",
+      "Type": "Personal Strength",
+      "Description": "Diagnosed why one pod's adoption stalled and coached the lead through a targeted intervention.",
+      "Session Date": "2026-06-19",
+      "Time": "13:00:00",
+      "Duration": "13:00:00 - 13:22:18",
+      "Tools": "Google Meet; Klarity Advisor",
+      "Category": "Enablement"
+    },
+    {
+      "Title": "Documented the end-to-end adoption model",
+      "Type": "Knowledge Documentation",
+      "Description": "Wrote up the adoption model (activate, sprint, reinforce) so it survives past his involvement.",
+      "Session Date": "2026-07-02",
+      "Time": "10:00:00",
+      "Duration": "10:00:00 - 10:28:44",
+      "Tools": "Notion",
+      "Category": "Enablement"
+    }
+  ],
+  "Nina Alvarez": [
+    {
+      "Title": "Cut variance-commentary turnaround",
+      "Type": "Personal Strength",
+      "Description": "Reduced variance-commentary turnaround from five days to two by reusing structured capture notes.",
+      "Session Date": "2026-02-10",
+      "Time": "09:00:00",
+      "Duration": "09:00:00 - 09:31:44",
+      "Tools": "SAP S/4HANA; Excel; Klarity Companion",
+      "Category": ""
+    },
+    {
+      "Title": "Reusable forecast dashboard pattern",
+      "Type": "Scaling Best Practice",
+      "Description": "Built four forecast dashboards from one reusable pattern the team now copies.",
+      "Session Date": "2026-02-25",
+      "Time": "14:10:00",
+      "Duration": "14:10:00 - 14:38:52",
+      "Tools": "Excel; Google Slides",
+      "Category": "Reporting"
+    },
+    {
+      "Title": "Manual SAP-to-Excel data pulls",
+      "Type": "Process Friction",
+      "Description": "Flagged repeated manual SAP-to-Excel pulls as a recurring forecast-cycle bottleneck.",
+      "Session Date": "2026-03-16",
+      "Time": "10:44:00",
+      "Duration": "10:44:00 - 10:52:30",
+      "Tools": "SAP S/4HANA; Excel",
+      "Category": "Data Pipeline"
+    },
+    {
+      "Title": "Driver-based forecast assumptions articulated",
+      "Type": "Knowledge Documentation",
+      "Description": "Verbalized the driver-based assumptions behind the revenue and opex forecast.",
+      "Session Date": "2026-03-30",
+      "Time": "13:20:00",
+      "Duration": "13:20:00 - 13:41:09",
+      "Tools": "Excel; Google Meet",
+      "Category": ""
+    },
+    {
+      "Title": "Forecast accuracy within 4%",
+      "Type": "Personal Strength",
+      "Description": "Q1 forecast landed within 4% of actuals across both business lines.",
+      "Session Date": "2026-04-20",
+      "Time": "11:15:00",
+      "Duration": "11:15:00 - 11:44:02",
+      "Tools": "Excel; SAP S/4HANA",
+      "Category": ""
+    },
+    {
+      "Title": "Scenario modeling proficiency",
+      "Type": "Personal Proficiency",
+      "Description": "Fluent building best/base/worst scenarios and sensitivity analyses in Excel.",
+      "Session Date": "2026-05-08",
+      "Time": "15:00:00",
+      "Duration": "15:00:00 - 15:26:33",
+      "Tools": "Excel",
+      "Category": ""
+    },
+    {
+      "Title": "Built the CFO board-deck financial narrative",
+      "Type": "Scaling Best Practice",
+      "Description": "Assembled a reusable board-deck financial narrative that others adapted for later cycles.",
+      "Session Date": "2026-05-22",
+      "Time": "10:30:00",
+      "Duration": "10:30:00 - 10:51:12",
+      "Tools": "Google Slides; Excel",
+      "Category": "Executive Communication"
+    },
+    {
+      "Title": "Proposed a live SAP-to-dashboard feed",
+      "Type": "Knowledge Documentation",
+      "Description": "Proposed replacing manual pulls with a live SAP-to-dashboard feed to remove the bottleneck.",
+      "Session Date": "2026-06-15",
+      "Time": "13:20:41",
+      "Duration": "13:20:41 - 13:33:09",
+      "Tools": "SAP S/4HANA; Excel",
+      "Category": "Process Improvement"
+    },
+    {
+      "Title": "Handled 11 ad-hoc requests without slipping the forecast",
+      "Type": "Personal Strength",
+      "Description": "Absorbed 11 ad-hoc analysis requests in the cycle while keeping the forecast on schedule.",
+      "Session Date": "2026-06-26",
+      "Time": "14:10:00",
+      "Duration": "14:10:00 - 14:38:52",
+      "Tools": "Excel; Google Slides",
+      "Category": ""
+    },
+    {
+      "Title": "Enthusiastic Advisor adopter",
+      "Type": "Collaboration Communication",
+      "Description": "Requested and shared extra Advisor prompts with the team, pulling others into deeper usage.",
+      "Session Date": "2026-07-01",
+      "Time": "09:02:19",
+      "Duration": "09:02:19 - 09:31:44",
+      "Tools": "Klarity Advisor; Klarity Companion",
+      "Category": "Adoption"
+    }
+  ],
+  "Rob Callahan": [
+    {
+      "Title": "Owned January month-end reconciliations end to end",
+      "Type": "Personal Strength",
+      "Description": "Carried the full East-region balance-sheet reconciliation set through January close without escalation.",
+      "Session Date": "2026-02-06",
+      "Time": "08:10:00",
+      "Duration": "08:10:00 - 08:49:12",
+      "Tools": "BlackLine; SAP S/4HANA; Klarity Companion",
+      "Category": ""
+    },
+    {
+      "Title": "Reusable reconciliation checklist shared with the pod",
+      "Type": "Scaling Best Practice",
+      "Description": "Turned his personal close checklist into a shared template the reconciliation pod now reuses each month.",
+      "Session Date": "2026-02-20",
+      "Time": "09:30:00",
+      "Duration": "09:30:00 - 09:55:40",
+      "Tools": "SharePoint; Klarity Companion",
+      "Category": "Process Improvement"
+    },
+    {
+      "Title": "Duplicate Excel tie-out performed outside BlackLine",
+      "Type": "Process Friction",
+      "Description": "Surfaced a manual Excel tie-out duplicating a BlackLine step \u2014 a recurring month-end rework source.",
+      "Session Date": "2026-03-05",
+      "Time": "14:20:00",
+      "Duration": "14:20:00 - 14:31:09",
+      "Tools": "Excel; BlackLine",
+      "Category": "Rework"
+    },
+    {
+      "Title": "Fast, exception-clean reconciliation workflow",
+      "Type": "Personal Proficiency",
+      "Description": "Consistently completes account reconciliations ~18% faster than baseline while flagging exceptions cleanly.",
+      "Session Date": "2026-03-19",
+      "Time": "08:22:00",
+      "Duration": "08:22:00 - 08:44:55",
+      "Tools": "BlackLine; SAP S/4HANA",
+      "Category": ""
+    },
+    {
+      "Title": "Q1 hard-close ownership under deadline",
+      "Type": "Personal Strength",
+      "Description": "Held the reconciliation line through a compressed Q1 hard close, no missed sub-cert deadlines.",
+      "Session Date": "2026-03-31",
+      "Time": "07:55:00",
+      "Duration": "07:55:00 - 09:10:00",
+      "Tools": "BlackLine; Oracle HFM; SAP S/4HANA",
+      "Category": ""
+    },
+    {
+      "Title": "MJE SOX-review checklist verbalized",
+      "Type": "Knowledge Documentation",
+      "Description": "Walked a junior through the manual-journal-entry SOX review steps; the checklist still lives only verbally.",
+      "Session Date": "2026-04-15",
+      "Time": "11:00:00",
+      "Duration": "11:00:00 - 11:12:40",
+      "Tools": "SharePoint; Klarity Companion",
+      "Category": ""
+    },
+    {
+      "Title": "Mentored two junior accountants on Companion",
+      "Type": "Collaboration Communication",
+      "Description": "Ran two peer sessions teaching juniors to capture their reconciliations, lifting pod coverage.",
+      "Session Date": "2026-04-28",
+      "Time": "15:30:00",
+      "Duration": "15:30:00 - 15:58:22",
+      "Tools": "Klarity Companion; Teams",
+      "Category": ""
+    },
+    {
+      "Title": "Auto-matching rule proposed for recurring items",
+      "Type": "Scaling Best Practice",
+      "Description": "Proposed a BlackLine auto-matching rule for recurring intercompany items, ~6 hrs/close projected savings.",
+      "Session Date": "2026-05-12",
+      "Time": "09:40:00",
+      "Duration": "09:40:00 - 10:05:33",
+      "Tools": "BlackLine; Klarity Advisor",
+      "Category": "Process Improvement"
+    },
+    {
+      "Title": "Flagged single-owner risk on bank reconciliations",
+      "Type": "Risk Mitigation",
+      "Description": "Raised that all bank reconciliations depend on one person, a coverage risk during PTO.",
+      "Session Date": "2026-05-27",
+      "Time": "13:10:00",
+      "Duration": "13:10:00 - 13:19:44",
+      "Tools": "Klarity Companion; Teams",
+      "Category": ""
+    },
+    {
+      "Title": "Disciplined daily reconciliation capture",
+      "Type": "Personal Strength",
+      "Description": "Ran Companion at the start of every close day, capturing reconciliations end to end without prompting.",
+      "Session Date": "2026-06-10",
+      "Time": "08:12:04",
+      "Duration": "08:12:04 - 08:52:41",
+      "Tools": "Klarity Companion; BlackLine; SAP S/4HANA",
+      "Category": "Adoption"
+    },
+    {
+      "Title": "Late sub-ledger postings slow reconciliation start",
+      "Type": "Process Friction",
+      "Description": "Noted upstream late sub-ledger postings repeatedly delay the start of reconciliations.",
+      "Session Date": "2026-06-24",
+      "Time": "09:05:00",
+      "Duration": "09:05:00 - 09:18:30",
+      "Tools": "SAP S/4HANA; BlackLine",
+      "Category": ""
+    },
+    {
+      "Title": "Zero restatements across the quarter",
+      "Type": "Personal Strength",
+      "Description": "Closed the quarter with zero reconciliation-driven restatements and clean SOX evidence.",
+      "Session Date": "2026-06-30",
+      "Time": "16:00:00",
+      "Duration": "16:00:00 - 16:20:00",
+      "Tools": "BlackLine; Workiva",
+      "Category": "Quality"
+    },
+    {
+      "Title": "Documented the reconciliation SOP in SharePoint",
+      "Type": "Knowledge Documentation",
+      "Description": "Captured the end-to-end reconciliation SOP in SharePoint so the pod isn't dependent on tribal knowledge.",
+      "Session Date": "2026-07-01",
+      "Time": "10:30:00",
+      "Duration": "10:30:00 - 10:52:12",
+      "Tools": "SharePoint; Klarity Companion",
+      "Category": ""
+    },
+    {
+      "Title": "Cross-team reconciliation partnering with FP&A",
+      "Type": "Collaboration Communication",
+      "Description": "Partnered with FP&A to align reconciliation outputs with variance inputs ahead of reporting.",
+      "Session Date": "2026-07-03",
+      "Time": "13:40:00",
+      "Duration": "13:40:00 - 14:02:20",
+      "Tools": "Teams; Excel",
+      "Category": ""
+    }
+  ],
+  "Sam Rios": [
+    {
+      "Title": "Caught interco imbalances before January close",
+      "Type": "Personal Strength",
+      "Description": "Identified and cleared three intercompany imbalances before the January hard close.",
+      "Session Date": "2026-02-12",
+      "Time": "10:10:00",
+      "Duration": "10:10:00 - 10:38:18",
+      "Tools": "Oracle HFM; Klarity Companion",
+      "Category": "Quality"
+    },
+    {
+      "Title": "Multi-entity consolidation proficiency",
+      "Type": "Personal Proficiency",
+      "Description": "Fluent across all five NA entities in Oracle HFM, including currency translation.",
+      "Session Date": "2026-02-27",
+      "Time": "11:40:00",
+      "Duration": "11:40:00 - 12:03:01",
+      "Tools": "Oracle HFM",
+      "Category": ""
+    },
+    {
+      "Title": "Currency translation performed outside HFM",
+      "Type": "Process Friction",
+      "Description": "Surfaced a currency-translation step run in Excel outside HFM, a reconciliation risk.",
+      "Session Date": "2026-03-18",
+      "Time": "13:05:00",
+      "Duration": "13:05:00 - 13:14:20",
+      "Tools": "Excel; Oracle HFM",
+      "Category": ""
+    },
+    {
+      "Title": "Q1 consolidation delivered on the hard-close date",
+      "Type": "Personal Strength",
+      "Description": "Completed multi-entity consolidation and eliminations on the Q1 hard-close deadline.",
+      "Session Date": "2026-03-31",
+      "Time": "08:30:00",
+      "Duration": "08:30:00 - 09:40:00",
+      "Tools": "Oracle HFM; SAP S/4HANA",
+      "Category": ""
+    },
+    {
+      "Title": "Standardized interco elimination template proposed",
+      "Type": "Scaling Best Practice",
+      "Description": "Proposed a standardized intercompany elimination template to cut rework across entities.",
+      "Session Date": "2026-04-22",
+      "Time": "09:55:00",
+      "Duration": "09:55:00 - 10:12:47",
+      "Tools": "Oracle HFM; Klarity Advisor",
+      "Category": "Process Improvement"
+    },
+    {
+      "Title": "Rework rate on consolidation halved",
+      "Type": "Personal Strength",
+      "Description": "Consolidation rework rate dropped from ~15% to ~8% after adopting the standardized template.",
+      "Session Date": "2026-05-14",
+      "Time": "14:20:00",
+      "Duration": "14:20:00 - 14:41:03",
+      "Tools": "Oracle HFM",
+      "Category": "Quality"
+    },
+    {
+      "Title": "Documented interco elimination logic",
+      "Type": "Knowledge Documentation",
+      "Description": "Wrote up the intercompany elimination logic and edge cases previously held only in memory.",
+      "Session Date": "2026-05-29",
+      "Time": "10:00:00",
+      "Duration": "10:00:00 - 10:22:15",
+      "Tools": "SharePoint; Oracle HFM",
+      "Category": ""
+    },
+    {
+      "Title": "Partnered with FP&A on consolidation inputs",
+      "Type": "Collaboration Communication",
+      "Description": "Coordinated with FP&A to reconcile consolidation outputs against forecast inputs.",
+      "Session Date": "2026-06-11",
+      "Time": "13:30:00",
+      "Duration": "13:30:00 - 13:52:40",
+      "Tools": "Teams; Excel",
+      "Category": ""
+    },
+    {
+      "Title": "Caught interco imbalances before close",
+      "Type": "Personal Strength",
+      "Description": "Again caught three interco imbalances during capture and resolved them before the hard close.",
+      "Session Date": "2026-06-29",
+      "Time": "10:11:02",
+      "Duration": "10:11:02 - 10:39:18",
+      "Tools": "Oracle HFM; Klarity Companion",
+      "Category": "Quality"
+    },
+    {
+      "Title": "Ran Advisor to surface consolidation bottlenecks",
+      "Type": "Scaling Best Practice",
+      "Description": "Used Advisor on captured consolidation data to surface the two steps adding the most cycle time.",
+      "Session Date": "2026-07-02",
+      "Time": "09:20:00",
+      "Duration": "09:20:00 - 09:35:10",
+      "Tools": "Klarity Advisor; Oracle HFM",
+      "Category": ""
+    }
+  ]
+}
