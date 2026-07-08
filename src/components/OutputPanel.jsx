@@ -1,8 +1,10 @@
 import { useState } from "react";
 
 // Renders the two output modes (review / ask), plus loading, error, and empty
-// states. Review mode includes a "Copy as Markdown" button.
-export default function OutputPanel({ status, result, error, personName }) {
+// states. Review mode keeps the curated review as the skimmable surface and
+// tucks the underlying signal rows behind per-citation expanders, with a
+// collapsed "not referenced" section so curation is transparent.
+export default function OutputPanel({ status, result, error, personName, signals }) {
   const [copied, setCopied] = useState(false);
 
   if (status === "idle") {
@@ -64,12 +66,28 @@ export default function OutputPanel({ status, result, error, personName }) {
         )}
       </div>
 
-      {isAsk ? <AskView result={result} /> : <ReviewView result={result} />}
+      {isAsk ? (
+        <AskView result={result} />
+      ) : (
+        <ReviewView result={result} signals={signals || []} />
+      )}
     </div>
   );
 }
 
-function ReviewView({ result }) {
+// --- Review mode ------------------------------------------------------------
+
+function ReviewView({ result, signals }) {
+  const index = buildIndex(signals);
+
+  // Which signals the curated review actually cited (matched by title).
+  const referenced = new Set();
+  for (const item of [...(result.strengths || []), ...(result.growth_areas || [])]) {
+    const key = norm(item.evidence);
+    if (index.has(key)) referenced.add(key);
+  }
+  const unreferenced = signals.filter((s) => !referenced.has(norm(s.Title)));
+
   return (
     <>
       <div className="section-title">Summary</div>
@@ -77,13 +95,13 @@ function ReviewView({ result }) {
 
       {result.strengths?.length > 0 && (
         <>
-          <div className="section-title">Strengths</div>
+          <div className="section-title">
+            Strengths <span className="count">({result.strengths.length})</span>
+          </div>
           {result.strengths.map((s, i) => (
             <div className="point" key={i}>
               <div className="point-text">{s.point}</div>
-              <div className="evidence">
-                Signal: <strong>{s.evidence}</strong>
-              </div>
+              <Citation title={s.evidence} signal={index.get(norm(s.evidence))} />
             </div>
           ))}
         </>
@@ -91,14 +109,15 @@ function ReviewView({ result }) {
 
       {result.growth_areas?.length > 0 && (
         <>
-          <div className="section-title">Growth areas</div>
+          <div className="section-title">
+            Growth areas{" "}
+            <span className="count">({result.growth_areas.length})</span>
+          </div>
           {result.growth_areas.map((g, i) => (
-            <div className="point" key={i}>
+            <div className="point growth" key={i}>
               <div className="point-text">{g.point}</div>
               {g.evidence && (
-                <div className="evidence">
-                  Signal: <strong>{g.evidence}</strong>
-                </div>
+                <Citation title={g.evidence} signal={index.get(norm(g.evidence))} />
               )}
             </div>
           ))}
@@ -115,9 +134,76 @@ function ReviewView({ result }) {
           </ul>
         </>
       )}
+
+      {unreferenced.length > 0 && (
+        <details className="unreferenced">
+          <summary>
+            <span className="cite-caret">▸</span>
+            Signals not referenced in this review ({unreferenced.length})
+          </summary>
+          <div className="unref-list">
+            {unreferenced.map((s, i) => (
+              <SignalDetail key={i} s={s} withTitle />
+            ))}
+          </div>
+        </details>
+      )}
     </>
   );
 }
+
+// A citation that expands to reveal the full underlying signal row. Falls back
+// to a plain (non-expandable) line if the cited title doesn't match a signal.
+function Citation({ title, signal }) {
+  if (!signal) {
+    return (
+      <div className="evidence">
+        Signal: <strong>{title}</strong>
+      </div>
+    );
+  }
+  return (
+    <details className="citation">
+      <summary>
+        <span className="cite-caret">▸</span>
+        <span className="cite-label">
+          Signal: <strong>{title}</strong>
+        </span>
+      </summary>
+      <SignalDetail s={signal} />
+    </details>
+  );
+}
+
+// The full underlying signal row: type, date, duration, description, tools.
+function SignalDetail({ s, withTitle }) {
+  return (
+    <div className="signal-detail">
+      {withTitle && <div className="signal-detail-title">{s.Title}</div>}
+      <div className="signal-detail-head">
+        <span className="badge">{s.Type}</span>
+        <span className="signal-meta">
+          {s["Session Date"]}
+          {s.Duration ? ` · ${s.Duration}` : ""}
+        </span>
+      </div>
+      {s.Description && <p className="signal-desc">{s.Description}</p>}
+      {s.Tools && <div className="signal-tools">Tools: {s.Tools}</div>}
+    </div>
+  );
+}
+
+function buildIndex(signals) {
+  const map = new Map();
+  for (const s of signals || []) map.set(norm(s.Title), s);
+  return map;
+}
+
+function norm(title) {
+  return (title || "").trim().toLowerCase();
+}
+
+// --- Ask mode ---------------------------------------------------------------
 
 function AskView({ result }) {
   return (
