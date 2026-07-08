@@ -360,11 +360,24 @@ details[open] > summary .cite-caret {
   font-weight: 600;
 }
 summary:hover .cite-label,
-summary:hover .cite-label strong {
+summary:hover .cite-label strong,
+summary:hover .cite-more {
   color: var(--orange);
 }
 details[open] .cite-label strong {
   color: var(--orange);
+}
+.cite-more {
+  font-weight: 500;
+}
+.point-text {
+  font-weight: 600;
+}
+.point-detail {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--charcoal);
+  margin: 8px 0 0;
 }
 
 /* Full underlying signal row */
