@@ -85,10 +85,7 @@ export default function App() {
           <span className="brand-dot" />
         </span>
         <h1>Throughline</h1>
-        <p>
-          The throughline from a person's Klarity signals to a manager-ready
-          review — every claim grounded in evidence.
-        </p>
+        <p>One clear read on a person, drawn straight from their signals.</p>
       </header>
 
       <div className="grid">
