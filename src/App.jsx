@@ -84,8 +84,8 @@ export default function App() {
         <span className="brandmark">
           <span className="brand-dot" />
         </span>
-        <h1>Signal → Review</h1>
-        <p>Turn a Klarity signal digest into a manager-ready performance review.</p>
+        <h1>Throughline</h1>
+        <p>One clear read on a person, drawn straight from their signals.</p>
       </header>
 
       <div className="grid">
