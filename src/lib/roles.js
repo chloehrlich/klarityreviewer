@@ -22,7 +22,7 @@ export const ROLE_CHAMPION = "Champion";
 // performer who happens to have some scaling/knowledge signals (e.g. Rob).
 const ENABLEMENT_CATEGORY = /enablement|adoption/i;
 const ENABLEMENT_DESC =
-  /\b(peer|peers|junior|juniors|onboard|onboarding|mentor|coach|taught|teaching|reused|reuse|rollout|share-?out|go-to|adoption|onto)\b/i;
+  /\b(peer|peers|junior|juniors|onboard|onboarding|mentor|coach|taught|teaching|reused|reuse|rollout|share-?outs?|go-to|adoption|onto|team engaged|kept the broader team)\b/i;
 
 function isEnablementFlavored(signal) {
   return (

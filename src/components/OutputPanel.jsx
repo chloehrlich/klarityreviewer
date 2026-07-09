@@ -99,10 +99,7 @@ function ReviewView({ result, signals }) {
             Strengths <span className="count">({result.strengths.length})</span>
           </div>
           {result.strengths.map((s, i) => (
-            <div className="point" key={i}>
-              <div className="point-text">{s.point}</div>
-              <Citation title={s.evidence} signal={index.get(norm(s.evidence))} />
-            </div>
+            <PointRow key={i} item={s} signal={index.get(norm(s.evidence))} />
           ))}
         </>
       )}
@@ -114,12 +111,12 @@ function ReviewView({ result, signals }) {
             <span className="count">({result.growth_areas.length})</span>
           </div>
           {result.growth_areas.map((g, i) => (
-            <div className="point growth" key={i}>
-              <div className="point-text">{g.point}</div>
-              {g.evidence && (
-                <Citation title={g.evidence} signal={index.get(norm(g.evidence))} />
-              )}
-            </div>
+            <PointRow
+              key={i}
+              item={g}
+              signal={index.get(norm(g.evidence))}
+              growth
+            />
           ))}
         </>
       )}
@@ -152,26 +149,33 @@ function ReviewView({ result, signals }) {
   );
 }
 
-// A citation that expands to reveal the full underlying signal row. Falls back
-// to a plain (non-expandable) line if the cited title doesn't match a signal.
-function Citation({ title, signal }) {
-  if (!signal) {
-    return (
-      <div className="evidence">
-        Signal: <strong>{title}</strong>
-      </div>
-    );
-  }
+// One strength / growth area: a scannable headline on the surface, with the
+// one-sentence detail and the full underlying signal tucked behind a single
+// expander. Skim the headlines; expand only what you want to dig into.
+function PointRow({ item, signal, growth }) {
+  const hasMore = Boolean(item.detail || signal || item.evidence);
   return (
-    <details className="citation">
-      <summary>
-        <span className="cite-caret">▸</span>
-        <span className="cite-label">
-          Signal: <strong>{title}</strong>
-        </span>
-      </summary>
-      <SignalDetail s={signal} />
-    </details>
+    <div className={"point" + (growth ? " growth" : "")}>
+      <div className="point-text">{item.point}</div>
+      {hasMore && (
+        <details className="citation">
+          <summary>
+            <span className="cite-caret">▸</span>
+            <span className="cite-more">Why &amp; signal</span>
+          </summary>
+          {item.detail && <p className="point-detail">{item.detail}</p>}
+          {signal ? (
+            <SignalDetail s={signal} />
+          ) : (
+            item.evidence && (
+              <div className="evidence">
+                Signal: <strong>{item.evidence}</strong>
+              </div>
+            )
+          )}
+        </details>
+      )}
+    </div>
   );
 }
 
@@ -246,14 +250,17 @@ export function toMarkdown(result, personName) {
   if (result.strengths?.length) {
     lines.push("## Strengths", "");
     for (const s of result.strengths) {
-      lines.push(`- ${s.point}`, `  - _Signal: ${s.evidence}_`);
+      lines.push(`- **${s.point}**`);
+      if (s.detail) lines.push(`  ${s.detail}`);
+      if (s.evidence) lines.push(`  - _Signal: ${s.evidence}_`);
     }
     lines.push("");
   }
   if (result.growth_areas?.length) {
     lines.push("## Growth Areas", "");
     for (const g of result.growth_areas) {
-      lines.push(`- ${g.point}`);
+      lines.push(`- **${g.point}**`);
+      if (g.detail) lines.push(`  ${g.detail}`);
       if (g.evidence) lines.push(`  - _Signal: ${g.evidence}_`);
     }
     lines.push("");
